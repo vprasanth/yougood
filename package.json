@@ -1,0 +1,32 @@
+{
+  "name": "yougood",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vprasanth/yougood.git"
+  },
+  "author": "Prasanth Vaaheeswaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vprasanth/yougood/issues"
+  },
+  "homepage": "https://github.com/vprasanth/yougood#readme",
+  "devDependencies": {
+    "husky": "^1.2.1",
+    "mocha": "^5.2.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
+    "semantic-release": "^15.12.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
