@@ -3,6 +3,8 @@ A quick and dirty health check http micro-server with zero-dependencies for node
 
 ## Usage
 
+`npm i --save yougood`
+
 ```javascript
 const { ready, notReady, alive, dead, server } = require('yougood');
 
@@ -17,10 +19,10 @@ ready();
 
 // some problem occures
 // e.g. db error listener
-// notReady('db connection went just went down'. Date.now());
+notReady('db connection went just went down'. Date.now());
 ```
 
-## default endpoints
+## Default Endpoints
 The following paths are set by default if none are provided. Any other path will return status code 400.
 
 ### `/live`
